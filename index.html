@@ -33,9 +33,6 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="YES">
-
-    <meta name="public-js/config/asset-manifest"
-        content="%7B%22bundles%22%3A%7B%22account-engine%22%3A%7B%22assets%22%3A%5B%7B%22uri%22%3A%22https%3A%2F%2Fstatic.ucraft.net%2Ffrontend-public%2Fengines-dist%2Faccount-engine%2Fassets%2Fengine-vendor.js%22%2C%22type%22%3A%22js%22%7D%2C%7B%22uri%22%3A%22https%3A%2F%2Fstatic.ucraft.net%2Ffrontend-public%2Fengines-dist%2Faccount-engine%2Fassets%2Fengine.css%22%2C%22type%22%3A%22css%22%7D%2C%7B%22uri%22%3A%22https%3A%2F%2Fstatic.ucraft.net%2Ffrontend-public%2Fengines-dist%2Faccount-engine%2Fassets%2Fengine.js%22%2C%22type%22%3A%22js%22%7D%2C%7B%22uri%22%3A%22https%3A%2F%2Fstatic.ucraft.net%2Ffrontend-public%2Fengines-dist%2Faccount-engine%2Fassets%2Fintl%2Fintl.complete.js%22%2C%22type%22%3A%22js%22%7D%2C%7B%22uri%22%3A%22https%3A%2F%2Fstatic.ucraft.net%2Ffrontend-public%2Fengines-dist%2Faccount-engine%2Fassets%2Fintl%2Fintl.js%22%2C%22type%22%3A%22js%22%7D%2C%7B%22uri%22%3A%22https%3A%2F%2Fstatic.ucraft.net%2Ffrontend-public%2Fengines-dist%2Faccount-engine%2Fassets%2Fintl%2Fintl.min.js%22%2C%22type%22%3A%22js%22%7D%2C%7B%22uri%22%3A%22https%3A%2F%2Fstatic.ucraft.net%2Ffrontend-public%2Fengines-dist%2Faccount-engine%2Fassets%2Fintl%2Flocales%2Fen.js%22%2C%22type%22%3A%22js%22%7D%2C%7B%22uri%22%3A%22https%3A%2F%2Fstatic.ucraft.net%2Ffrontend-public%2Fengines-dist%2Faccount-engine%2Fassets%2Fintl%2Flocales%2Fhy.js%22%2C%22type%22%3A%22js%22%7D%2C%7B%22uri%22%3A%22https%3A%2F%2Fstatic.ucraft.net%2Ffrontend-public%2Fengines-dist%2Faccount-engine%2Fassets%2Fintl%2Flocales%2Fru.js%22%2C%22type%22%3A%22js%22%7D%5D%7D%2C%22assets%22%3A%7B%22assets%22%3A%5B%5D%7D%7D%7D">
     <meta name="public-js/config/environment"
         content="%7B%22modulePrefix%22%3A%22public-js%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22hash%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22public-js%22%2C%22version%22%3A%220.0.0+56cc87f8%22%7D%2C%22torii%22%3A%7B%22providers%22%3A%7B%22vk-oauth2%22%3A%7B%22apiKey%22%3A%22%22%2C%22redirectUri%22%3A%22%22%7D%2C%22facebook-oauth2%22%3A%7B%22apiKey%22%3A%22%22%2C%22redirectUri%22%3A%22%22%7D%2C%22google-oauth2%22%3A%7B%22apiKey%22%3A%22%22%2C%22redirectUri%22%3A%22%22%2C%22scope%22%3A%22profile%20email%22%7D%7D%7D%2C%22exportApplicationGlobal%22%3Afalse%2C%22ember-modal-dialog%22%3A%7B%7D%7D">
     <meta name="account-engine/config/environment"
@@ -56,47 +53,7 @@
 
 
 
-    <style type="text/css" id="font-face-style-proxima-nova-bold-custom">
-        @font-face {
-            font-family: 'Proxima Nova Bold Custom';
-            font-display: fallback;
-            src: url(https://static.ucraft.net/fs/ucraft/userFiles/dscsx/fonts/ProximaNova-Bold.ttf?v=1696731587);
-            font-weight: bold;
-
-
-        }
-    </style>
-    <style type="text/css" id="font-face-style-proxima-nova-regular-custom">
-        @font-face {
-            font-family: 'Proxima Nova Regular Custom';
-            font-display: fallback;
-            src: url(https://static.ucraft.net/fs/ucraft/userFiles/dscsx/fonts/ProximaNova-Regular.ttf?v=1696731587);
-
-
-
-        }
-    </style>
-    <style type="text/css" id="font-face-style-proxima-nova-semibold-custom">
-        @font-face {
-            font-family: 'Proxima Nova Semibold Custom';
-            font-display: fallback;
-            src: url(https://static.ucraft.net/fs/ucraft/userFiles/dscsx/fonts/ProximaNova-Semibold.ttf?v=1696731587);
-
-
-
-        }
-    </style>
-
-
-    <script>
-        window.currentLanguage = 'en-us';
-        window.currentLanguagePrefix = 'en';
-
-        let renderCustomCodeOnClientDomain = "";
-        window.renderCustomCodeOnClientDomain = !renderCustomCodeOnClientDomain ? 0 : parseInt(renderCustomCodeOnClientDomain);
-        var ecommerceAssetsDomain = 'https://d2j6dbq0eux0bg.cloudfront.net';
-        var typographyTranslations = { "typography.headings": "Headings", "typography.heading1": " Heading 1", "typography.heading2": " Heading 2", "typography.heading3": " Heading 3", "typography.heading4": " Heading 4", "typography.heading5": " Heading 5", "typography.heading6": " Heading 6", "typography.paragraphStyling": "Paragraph styling", "typography.paragraphText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <a href='javascript:void(0)'>eiusmod incididunt<\/a> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "typography.copiedText": "Text copied", "typography.copyToClipboard": "Copy to Clipboard" };
-    </script>
+   
 
 
 
@@ -422,7 +379,7 @@
                                                                     <nav
                                                                         class="standard-view  scrolling-wrapper-on-device ">
                                                                         <ul class="navigation" style="" itemscope=""
-                                                                            itemtype="https://www.schema.org/SiteNavigationElement">
+                                                                            itemtype="#">
                                                                             <li class="page subMenu__item show center
                  active                                                 " data-anchor="" itemprop="name">
                                                                                 <a class="nav-item center " href="#"
